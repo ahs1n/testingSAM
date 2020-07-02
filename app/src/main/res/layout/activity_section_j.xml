@@ -1,0 +1,201 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="callback"
+            type="edu.aku.hassannaqvi.ctsam.ui.sections.SectionJActivity" />
+    </data>
+
+    <ScrollView
+        style="@style/i_scrollview"
+        android:layoutDirection="rtl"
+        android:textDirection="rtl">
+
+
+        <LinearLayout
+            android:id="@+id/fldGrpSectionJ"
+            style="@style/vlinearlayout">
+
+
+            <!-- s10q1  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVs10q1"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_s10q1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s10q1"
+                            android:text="@string/s10q1" />
+
+                        <TextView
+                            android:id="@+id/q_s10q1"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s10q1"
+                            android:layout_alignBottom="@id/qtxt_s10q1"
+                            android:text="@string/Q_s10q1" />
+
+                    </RelativeLayout>
+
+                    <RadioGroup
+                        android:id="@+id/s10q1"
+                        style="@style/radiogroup">
+
+                        <RadioButton
+                            android:id="@+id/s10q1a"
+                            style="@style/radiobutton"
+                            android:padding="20dp"
+                            android:text="@string/s10q1a" />
+
+                        <RadioButton
+                            android:id="@+id/s10q1b"
+                            style="@style/radiobutton"
+                            android:padding="20dp"
+                            android:text="@string/s10q1b" />
+
+                        <RadioButton
+                            android:id="@+id/s10q1c"
+                            style="@style/radiobutton"
+                            android:padding="20dp"
+                            android:text="@string/s10q1c" />
+
+                        <RadioButton
+                            android:id="@+id/s10q1d"
+                            style="@style/radiobutton"
+                            android:padding="20dp"
+                            android:text="@string/s10q1d" />
+
+                    </RadioGroup>
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/s10q1ax"
+                        style="@style/EditTextNum"
+                        android:hint="##"
+                        android:maxLength="2"
+                        android:padding="15dp"
+                        android:text='@{s10q1a.checked? s10q1ax.getText().toString() : ""}'
+                        android:visibility='@{s10q1a.checked? View.VISIBLE : View.GONE}'
+                        app:maxValue="70"
+                        app:minValue="11"
+                        app:type="range" />
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/s10q1bx"
+                        style="@style/EditTextNum"
+                        android:hint="##"
+                        android:maxLength="2"
+                        android:padding="15dp"
+                        android:text='@{s10q1b.checked? s10q1bx.getText().toString() : ""}'
+                        android:visibility='@{s10q1b.checked? View.VISIBLE : View.GONE}'
+                        app:maxValue="70"
+                        app:minValue="11"
+                        app:type="range" />
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/s10q1cx"
+                        style="@style/EditTextNum"
+                        android:hint="##"
+                        android:maxLength="2"
+                        android:padding="15dp"
+                        android:text='@{s10q1c.checked? s10q1cx.getText().toString() : ""}'
+                        android:visibility='@{s10q1c.checked? View.VISIBLE : View.GONE}'
+                        app:maxValue="70"
+                        app:minValue="11"
+                        app:type="range" />
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/s10q1dx"
+                        style="@style/EditTextNum"
+                        android:hint="##"
+                        android:maxLength="2"
+                        android:padding="15dp"
+                        android:text='@{s10q1d.checked? s10q1dx.getText().toString() : ""}'
+                        android:visibility='@{s10q1d.checked? View.VISIBLE : View.GONE}'
+                        app:maxValue="70"
+                        app:minValue="11"
+                        app:type="range" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- s10q2  Input-Numeric   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVs10q2"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_s10q2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s10q2"
+                            android:text="@string/s10q2" />
+
+                        <TextView
+                            android:id="@+id/q_s10q2"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s10q2"
+                            android:layout_alignBottom="@id/qtxt_s10q2"
+                            android:text="@string/Q_s10q2" />
+
+                    </RelativeLayout>
+
+                    <io.blackbox_vision.datetimepickeredittext.view.DatePickerEditText
+                        android:id="@+id/s10q2"
+                        style="@style/EditTextNum"
+                        android:hint="@string/s10q2"
+                        app:maxDate="CR_DATE" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--  EndButton LinearLayout-->
+            <LinearLayout style="@style/hlinearlayout">
+
+                <Button
+                    android:id="@+id/btn_End"
+                    style="@style/buttonEnd"
+                    android:onClick="@{() -> callback.BtnEnd()}"
+                    android:text="Cancel" />
+
+                <Button
+                    android:id="@+id/btn_Continue"
+                    style="@style/buttonNext"
+                    android:onClick="@{() -> callback.BtnContinue()}"
+                    android:text="Save" />
+                <!--  EndButton LinearLayout-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

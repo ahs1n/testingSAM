@@ -1,0 +1,273 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="callback"
+            type="edu.aku.hassannaqvi.ctsam.ui.sections.SectionGActivity" />
+    </data>
+
+    <ScrollView
+        style="@style/i_scrollview"
+        android:layoutDirection="rtl"
+        android:textDirection="rtl">
+
+
+        <LinearLayout
+            android:id="@+id/fldGrpSectionG"
+            style="@style/vlinearlayout">
+
+
+            <!-- s7q4  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVs7q4"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_s7q1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s7q1"
+                            android:text="@string/s7q1" />
+
+                        <TextView
+                            android:id="@+id/q_s7q1"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s7q1"
+                            android:layout_alignBottom="@id/qtxt_s7q1"
+                            android:text="@string/Q_s7q1" />
+
+                    </RelativeLayout>
+
+                    <RadioGroup
+                        android:id="@+id/s7q1"
+                        style="@style/radiogroup"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/s7q101"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
+
+                        <RadioButton
+                            android:id="@+id/s7q102"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- s7q5  CheckBox   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVs7q2"
+                style="@style/cardView"
+                android:visibility='@{s7q102.checked? View.GONE : View.VISIBLE}'>
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_s7q2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s7q2"
+                            android:text="@string/s7q2" />
+
+                        <TextView
+                            android:id="@+id/q_s7q2"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s7q2"
+                            android:layout_alignBottom="@id/qtxt_s7q2"
+                            android:text="@string/Q_s7q2" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/s7q2check"
+                        style="@style/vlinearlayout"
+                        android:tag="0">
+
+                        <CheckBox
+                            android:id="@+id/s7q201"
+                            style="@style/checkbox"
+                            android:text="@string/s7q201" />
+
+                        <CheckBox
+                            android:id="@+id/s7q202"
+                            style="@style/checkbox"
+                            android:text="@string/s7q202" />
+
+                        <CheckBox
+                            android:id="@+id/s7q203"
+                            style="@style/checkbox"
+                            android:text="@string/s7q203" />
+
+                        <CheckBox
+                            android:id="@+id/s7q204"
+                            style="@style/checkbox"
+                            android:text="@string/s7q204" />
+
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/s7q205"
+                        style="@style/checkbox"
+                        android:tag="-1"
+                        android:text="@string/s7q205" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- s7q6  CheckBox   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVs7q3"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_s7q3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s7q3"
+                            android:text="@string/s7q3" />
+
+                        <TextView
+                            android:id="@+id/q_s7q3"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s7q3"
+                            android:layout_alignBottom="@id/qtxt_s7q3"
+                            android:drawableStart="@drawable/ic_info_outline_black_24dp"
+                            android:drawablePadding="16dp"
+                            android:onClick="showTooltip"
+                            android:text="@string/Q_s7q3" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/s7q3check"
+                        style="@style/vlinearlayout"
+                        android:tag="0">
+
+                        <CheckBox
+                            android:id="@+id/s7q301"
+                            style="@style/checkbox"
+                            android:text="@string/s7q301" />
+
+                        <CheckBox
+                            android:id="@+id/s7q302"
+                            style="@style/checkbox"
+                            android:text="@string/s7q302" />
+
+                        <CheckBox
+                            android:id="@+id/s7q303"
+                            style="@style/checkbox"
+                            android:text="@string/s7q303" />
+
+                        <CheckBox
+                            android:id="@+id/s7q304"
+                            style="@style/checkbox"
+                            android:text="@string/s7q304" />
+
+                        <CheckBox
+                            android:id="@+id/s7q305"
+                            style="@style/checkbox"
+                            android:text="@string/s7q305" />
+
+                        <CheckBox
+                            android:id="@+id/s7q306"
+                            style="@style/checkbox"
+                            android:text="@string/s7q306" />
+
+                        <CheckBox
+                            android:id="@+id/s7q307"
+                            style="@style/checkbox"
+                            android:text="@string/s7q307" />
+
+                        <CheckBox
+                            android:id="@+id/s7q308"
+                            style="@style/checkbox"
+                            android:text="@string/s7q308" />
+
+                        <CheckBox
+                            android:id="@+id/s7q309"
+                            style="@style/checkbox"
+                            android:text="@string/s7q309" />
+
+                        <CheckBox
+                            android:id="@+id/s7q396"
+                            style="@style/checkbox"
+                            android:text="@string/other" />
+
+                        <EditText
+                            android:id="@+id/s7q396x"
+                            style="@style/EditTextAlpha"
+                            android:hint="@string/specify"
+                            android:tag="s7q696"
+                            android:text='@{s7q396.checked? s7q396x.getText().toString() : ""}'
+                            android:visibility='@{s7q396.checked? View.VISIBLE : View.GONE}' />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--  EndButton LinearLayout  -->
+            <LinearLayout style="@style/hlinearlayout">
+
+                <Button
+                    android:id="@+id/btn_End"
+                    style="@style/buttonEnd"
+                    android:onClick="@{() -> callback.BtnEnd()}"
+                    android:text="Cancel" />
+
+                <Button
+                    android:id="@+id/btn_Continue"
+                    style="@style/buttonNext"
+                    android:onClick="@{() -> callback.BtnContinue()}"
+                    android:text="Save" />
+                <!--  EndButton LinearLayout  -->
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>
