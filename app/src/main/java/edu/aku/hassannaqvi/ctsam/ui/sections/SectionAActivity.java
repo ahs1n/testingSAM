@@ -136,12 +136,10 @@ public class SectionAActivity extends AppCompatActivity implements EndSectionAct
         MainApp.fc.setsA(String.valueOf(json));
     }
 
-
     private boolean formValidation(boolean flag) {
         if (flag) return Validator.emptyCheckingContainer(this, bi.fldGrpSectionA);
         else return Validator.emptyCheckingContainer(this, bi.fldGrpSectionA01);
     }
-
 
     public void BtnEnd() {
         if (!formValidation(false)) return;
@@ -228,7 +226,6 @@ public class SectionAActivity extends AppCompatActivity implements EndSectionAct
             }
         });
     }
-
 
     long getHfCode(String hf_name) {
 

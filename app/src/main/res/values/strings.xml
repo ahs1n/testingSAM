@@ -94,7 +94,7 @@
     <string name="s1q8">Has the parents/legal guardian agreed to participate and given the consent?</string>
     <string name="s1q8a">Yes</string>
     <string name="s1q8b">No.</string>
-    <string name="s1q8reason">Reason for not given consent</string>
+    <string name="s1q8r">Reason for not given consent</string>
     <string name="s2t">Screening for SAM Cases</string>
     <string name="muac1">MUAC-01</string>
     <string name="muac2">MUAC-02</string>
