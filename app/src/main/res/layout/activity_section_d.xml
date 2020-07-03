@@ -4,17 +4,15 @@
     <data>
 
         <import type="android.view.View" />
-
-        <variable
-            name="formsContract"
-            type="edu.aku.hassannaqvi.uen_hfa_ml.contracts.FormsContract" />
-
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.ui.Myactivity" />
+            type="edu.aku.hassannaqvi.ctsam.ui.sections.SectionDActivity" />
     </data>
 
     <ScrollView
+        style="@style/i_scrollview"
+        android:layoutDirection="ltr"
+        android:textDirection="ltr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -53,36 +51,51 @@
 
                     <RadioGroup
                         android:id="@+id/s4q1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        style="@style/radiogroup"
+                        android:orientation="vertical">
 
-                        <RadioButton
-                            android:id="@+id/s4q1a"
+                        <LinearLayout
+                            style="@style/hlinearlayout"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s4q1a.equals("
-                            android:text="@string/s4q1a"1")}"/>
+                            android:layout_height="match_parent">
 
-                        <RadioButton
-                            android:id="@+id/s4q1b"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s4q1b.equals("
-                            android:text="@string/s4q1b"2")}"/>
+                            <RadioButton
+                                android:id="@+id/s4q1a"
+                                style="@style/radiobutton"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/s4q1a" />
 
-                        <RadioButton
-                            android:id="@+id/s4q1c"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s4q1c.equals("
-                            android:text="@string/s4q1c"3")}"/>
+                            <RadioButton
+                                android:id="@+id/s4q1b"
+                                style="@style/radiobutton"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/s4q1b" />
 
-                        <RadioButton
-                            android:id="@+id/s4q1d"
+                        </LinearLayout>
+
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s4q1d.equals("
-                            android:text="@string/s4q1d"4")}"/>
+                            android:layout_height="match_parent">
+
+                            <RadioButton
+                                android:id="@+id/s4q1c"
+                                style="@style/radiobutton"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/s4q1c" />
+
+                            <RadioButton
+                                android:id="@+id/s4q1d"
+                                style="@style/radiobutton"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/s4q1d" />
+
+                        </LinearLayout>
+
+
                     </RadioGroup>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -92,10 +105,11 @@
                 android:id="@+id/fldGrpCVs4q2"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <RelativeLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bottom">
 
@@ -105,6 +119,7 @@
                             android:layout_height="wrap_content"
                             android:layout_toEndOf="@id/q_s4q2"
                             android:text="@string/s4q2" />
+
                         <TextView
                             android:id="@+id/q_s4q2"
                             style="@style/quesNum"
@@ -117,6 +132,8 @@
 
 
                     <com.edittextpicker.aliazaz.EditTextPicker
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:id="@+id/s4q2"
                         style="@style/EditTextNum"
                         android:hint="@string/s4q2"
@@ -273,15 +290,13 @@
                             android:id="@+id/s4q6a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s4q6a.equals("
-                            android:text="@string/s4q6a"1")}"/>
+                            android:text="@string/s4q6a" />
 
                         <RadioButton
                             android:id="@+id/s4q6b"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s4q6b.equals("
-                            android:text="@string/s4q6b"2")}"/>
+                            android:text="@string/s4q6b" />
                     </RadioGroup>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -324,15 +339,13 @@
                             android:id="@+id/s4q7a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s4q7a.equals("
-                            android:text="@string/s4q7a"1")}"/>
+                            android:text="@string/s4q7a" />
 
                         <RadioButton
                             android:id="@+id/s4q7b"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s4q7b.equals("
-                            android:text="@string/s4q7b"2")}"/>
+                            android:text="@string/s4q7b" />
                     </RadioGroup>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -342,10 +355,11 @@
                 android:id="@+id/fldGrpCVs4q7dob"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <RelativeLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bottom">
 
@@ -366,10 +380,11 @@
                             android:text="@string/Q_s4q7dob" />
                     </RelativeLayout>
 
-
                     <EditText
                         android:id="@+id/s4q7dob"
                         style="@style/EditTextAlpha"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:hint="@string/s4q7dob" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -379,10 +394,11 @@
                 android:id="@+id/fldGrpCVs4q7days"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <RelativeLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bottom">
 
@@ -405,6 +421,8 @@
 
 
                     <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:id="@+id/s4q7days"
                         style="@style/EditTextAlpha"
                         android:hint="@string/s4q7days" />
@@ -416,10 +434,11 @@
                 android:id="@+id/fldGrpCVs4q7mon"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <RelativeLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bottom">
 
@@ -442,6 +461,8 @@
 
 
                     <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:id="@+id/s4q7mon"
                         style="@style/EditTextAlpha"
                         android:hint="@string/s4q7mon" />
@@ -453,10 +474,11 @@
                 android:id="@+id/fldGrpCVs4q8"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <RelativeLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bottom">
 
@@ -466,6 +488,7 @@
                             android:layout_height="wrap_content"
                             android:layout_toEndOf="@id/q_s4q8"
                             android:text="@string/s4q8" />
+
                         <TextView
                             android:id="@+id/q_s4q8"
                             style="@style/quesNum"
@@ -479,22 +502,24 @@
 
                     <RadioGroup
                         android:id="@+id/s4q8"
-                        android:layout_width="match_parent"
+                        style="@style/hradiogroup"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content">
 
                         <RadioButton
                             android:id="@+id/s4q8a"
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
                             android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s4q8a.equals("
-                            android:text="@string/s4q8a"1")}"/>
+                            android:text="@string/s4q8a" />
 
                         <RadioButton
                             android:id="@+id/s4q8b"
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
                             android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s4q8b.equals("
-                            android:text="@string/s4q8b"2")}"/>
+                            android:text="@string/s4q8b" />
                     </RadioGroup>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -504,10 +529,11 @@
                 android:id="@+id/fldGrpCVs4q9"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <RelativeLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bottom">
 
@@ -517,6 +543,7 @@
                             android:layout_height="wrap_content"
                             android:layout_toEndOf="@id/q_s4q9"
                             android:text="@string/s4q9" />
+
                         <TextView
                             android:id="@+id/q_s4q9"
                             style="@style/quesNum"
@@ -529,6 +556,8 @@
 
 
                     <com.edittextpicker.aliazaz.EditTextPicker
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:id="@+id/s4q9"
                         style="@style/EditTextNum"
                         android:hint="@string/s4q9"
@@ -544,10 +573,11 @@
                 android:id="@+id/fldGrpCVs4q10"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <RelativeLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bottom">
 
@@ -557,6 +587,7 @@
                             android:layout_height="wrap_content"
                             android:layout_toEndOf="@id/q_s4q10"
                             android:text="@string/s4q10" />
+
                         <TextView
                             android:id="@+id/q_s4q10"
                             style="@style/quesNum"
@@ -569,23 +600,25 @@
 
 
                     <RadioGroup
+                        style="@style/hradiogroup"
                         android:id="@+id/s4q10"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content">
 
                         <RadioButton
                             android:id="@+id/s410q410a"
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
                             android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s410q410a.equals("
-                            android:text="@string/s410q410a"1")}"/>
+                            android:text="@string/s410q410a" />
 
                         <RadioButton
                             android:id="@+id/s410q410b"
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
                             android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s410q410b.equals("
-                            android:text="@string/s410q410b"2")}"/>
+                            android:text="@string/s410q410b" />
                     </RadioGroup>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -595,10 +628,11 @@
                 android:id="@+id/fldGrpCVs4q11"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <RelativeLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bottom">
 
@@ -608,6 +642,7 @@
                             android:layout_height="wrap_content"
                             android:layout_toEndOf="@id/q_s4q11"
                             android:text="@string/s4q11" />
+
                         <TextView
                             android:id="@+id/q_s4q11"
                             style="@style/quesNum"
@@ -620,6 +655,8 @@
 
 
                     <com.edittextpicker.aliazaz.EditTextPicker
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:id="@+id/s4q11"
                         style="@style/EditTextNum"
                         android:hint="@string/s4q11"
@@ -647,7 +684,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_toEndOf="@id/q_s4subtitle"
-                            android:text="@string/s4subtitle" />
+                            android:text="@string/s4subtitle"
+                            android:textAlignment="center" />
 
                         <TextView
                             android:id="@+id/q_s4subtitle"
@@ -704,10 +742,11 @@
                 android:id="@+id/fldGrpCVs4q14m1hei"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <RelativeLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bottom">
 
@@ -717,6 +756,7 @@
                             android:layout_height="wrap_content"
                             android:layout_toEndOf="@id/q_s4q14m1hei"
                             android:text="@string/s4q14m1hei" />
+
                         <TextView
                             android:id="@+id/q_s4q14m1hei"
                             style="@style/quesNum"
@@ -729,6 +769,8 @@
 
 
                     <com.edittextpicker.aliazaz.EditTextPicker
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:id="@+id/s4q14m1hei"
                         style="@style/EditTextNum"
                         android:hint="@string/s4q14m1hei"
@@ -744,10 +786,11 @@
                 android:id="@+id/fldGrpCVs4q15m1wei"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <RelativeLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bottom">
 
@@ -757,6 +800,7 @@
                             android:layout_height="wrap_content"
                             android:layout_toEndOf="@id/q_s4q15m1wei"
                             android:text="@string/s4q15m1wei" />
+
                         <TextView
                             android:id="@+id/q_s4q15m1wei"
                             style="@style/quesNum"
@@ -769,6 +813,8 @@
 
 
                     <com.edittextpicker.aliazaz.EditTextPicker
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:id="@+id/s4q15m1wei"
                         style="@style/EditTextNum"
                         android:hint="@string/s4q15m1wei"
@@ -784,10 +830,11 @@
                 android:id="@+id/fldGrpCVs4q15m1mua"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <RelativeLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bottom">
 
@@ -797,6 +844,7 @@
                             android:layout_height="wrap_content"
                             android:layout_toEndOf="@id/q_s4q15m1mua"
                             android:text="@string/s4q15m1mua" />
+
                         <TextView
                             android:id="@+id/q_s4q15m1mua"
                             style="@style/quesNum"
@@ -809,6 +857,8 @@
 
 
                     <com.edittextpicker.aliazaz.EditTextPicker
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:id="@+id/s4q15m1mua"
                         style="@style/EditTextNum"
                         android:hint="@string/s4q15m1mua"
@@ -860,10 +910,11 @@
                 android:id="@+id/fldGrpCVs4q14m2hei"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <RelativeLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bottom">
 
@@ -886,6 +937,8 @@
 
 
                     <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:id="@+id/s4q14m2hei"
                         style="@style/EditTextAlpha"
                         android:hint="@string/s4q14m2hei" />
@@ -897,10 +950,11 @@
                 android:id="@+id/fldGrpCVs4q15m2wei"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <RelativeLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bottom">
 
@@ -910,6 +964,7 @@
                             android:layout_height="wrap_content"
                             android:layout_toEndOf="@id/q_s4q15m2wei"
                             android:text="@string/s4q15m2wei" />
+
                         <TextView
                             android:id="@+id/q_s4q15m2wei"
                             style="@style/quesNum"
@@ -922,6 +977,8 @@
 
 
                     <com.edittextpicker.aliazaz.EditTextPicker
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:id="@+id/s4q15m2wei"
                         style="@style/EditTextNum"
                         android:hint="@string/s4q15m2wei"
@@ -937,10 +994,11 @@
                 android:id="@+id/fldGrpCVs4q15m2mua"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <RelativeLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bottom">
 
@@ -950,6 +1008,7 @@
                             android:layout_height="wrap_content"
                             android:layout_toEndOf="@id/q_s4q15m2mua"
                             android:text="@string/s4q15m2mua" />
+
                         <TextView
                             android:id="@+id/q_s4q15m2mua"
                             style="@style/quesNum"
@@ -962,6 +1021,8 @@
 
 
                     <com.edittextpicker.aliazaz.EditTextPicker
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:id="@+id/s4q15m2mua"
                         style="@style/EditTextNum"
                         android:hint="@string/s4q15m2mua"
@@ -978,16 +1039,15 @@
 
                 <Button
                     android:id="@+id/btn_End"
-                    android:id="@+id/btn_End"
-                    style="@style/btnEnd"
+                    style="@style/buttonEnd"
                     android:onClick="@{() -> callback.BtnEnd()}"
                     android:text="End" />
 
                 <Button
-                    android:id="@+id/btn_End"
-                    style="@style/btnEnd"
-                    android:onClick="@{() -> callback.BtnEnd()}"
-                    android:text="End" />
+                    android:id="@+id/btn_Continue"
+                    style="@style/buttonNext"
+                    android:onClick="@{() -> callback.BtnContinue()}"
+                    android:text="Save" />
                 <!--EndButton LinearLayout-->
             </LinearLayout>
         </LinearLayout>
