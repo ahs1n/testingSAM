@@ -35,7 +35,6 @@ public class SectionBActivity extends AppCompatActivity {
         setupSkip();
     }
 
-
     private void setupSkip() {
 
         //s2q3
@@ -66,7 +65,6 @@ public class SectionBActivity extends AppCompatActivity {
 
     }
 
-
     public void BtnContinue() {
         if (formValidation()) {
             try {
@@ -83,7 +81,6 @@ public class SectionBActivity extends AppCompatActivity {
         }
     }
 
-
     private boolean UpdateDB() {
 
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
@@ -95,7 +92,6 @@ public class SectionBActivity extends AppCompatActivity {
             return false;
         }
     }
-
 
     private void SaveDraft() throws JSONException {
 
@@ -173,7 +169,6 @@ public class SectionBActivity extends AppCompatActivity {
         MainApp.fc.setsB(String.valueOf(json));
     }
 
-
     private boolean formValidation() {
 
         if (!Validator.emptyCheckingContainer(this, bi.fldGrpSectionB)) {
@@ -190,7 +185,6 @@ public class SectionBActivity extends AppCompatActivity {
 
         return true;
     }
-
 
     public void BtnEnd() {
         UtilKt.openEndActivity(this);
