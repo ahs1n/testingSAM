@@ -15,7 +15,7 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:id="@+id/GrpName"
+            android:id="@+id/fldGrpSectionC"
             style="@style/vlinearlayout">
 
             <!-- s3qa  Input-Numeric   -->

@@ -17,7 +17,7 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:id="@+id/GrpName"
+            android:id="@+id/fldGrpSectionD"
             style="@style/vlinearlayout">
 
             <!-- s4q1  Radio   -->
