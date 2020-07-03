@@ -1,15 +1,13 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
+
     <data>
 
         <import type="android.view.View" />
 
         <variable
-            name="formsContract"
-            type="edu.aku.hassannaqvi.uen_hfa_ml.contracts.FormsContract" />
-
-        <variable
             name="callback"
-            type="edu.aku.hassannaqvi.ui.Myactivity" />
+            type="edu.aku.hassannaqvi.ctsam.ui.sections.SectionGActivity" />
+
     </data>
 
     <ScrollView
@@ -38,6 +36,7 @@
                             android:layout_height="wrap_content"
                             android:layout_toEndOf="@id/q_s7q1"
                             android:text="@string/s7q1" />
+
                         <TextView
                             android:id="@+id/q_s7q1"
                             style="@style/quesNum"
@@ -58,15 +57,13 @@
                             android:id="@+id/s7q101"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s7q101.equals("
-                            android:text="@string/s7q101"1")}"/>
+                            android:text="@string/s7q101" />
 
                         <RadioButton
                             android:id="@+id/s7q102"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s7q102.equals("
-                            android:text="@string/s7q102"2")}"/>
+                            android:text="@string/s7q102" />
                     </RadioGroup>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -89,6 +86,7 @@
                             android:layout_height="wrap_content"
                             android:layout_toEndOf="@id/q_s7q2"
                             android:text="@string/s7q2" />
+
                         <TextView
                             android:id="@+id/q_s7q2"
                             style="@style/quesNum"
@@ -109,36 +107,31 @@
                             android:id="@+id/s7q201"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s7q201.equals("
-                            android:text="@string/s7q201"1")}" />
+                            android:text="@string/s7q201" />
 
                         <CheckBox
                             android:id="@+id/s7q202"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s7q202.equals("
-                            android:text="@string/s7q202"2")}" />
+                            android:text="@string/s7q202" />
 
                         <CheckBox
                             android:id="@+id/s7q203"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s7q203.equals("
-                            android:text="@string/s7q203"3")}" />
+                            android:text="@string/s7q203" />
 
                         <CheckBox
                             android:id="@+id/s7q204"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s7q204.equals("
-                            android:text="@string/s7q204"4")}" />
+                            android:text="@string/s7q204" />
 
                         <CheckBox
                             android:id="@+id/s7q205"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s7q205.equals("
-                            android:text="@string/s7q205"5")}" />
+                            android:text="@string/s7q205" />
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -161,6 +154,7 @@
                             android:layout_height="wrap_content"
                             android:layout_toEndOf="@id/q_s7q3"
                             android:text="@string/s7q3" />
+
                         <TextView
                             android:id="@+id/q_s7q3"
                             style="@style/quesNum"
@@ -181,71 +175,61 @@
                             android:id="@+id/s7q301"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s7q301.equals("
-                            android:text="@string/s7q301"1")}" />
+                            android:text="@string/s7q301" />
 
                         <CheckBox
                             android:id="@+id/s7q302"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s7q302.equals("
-                            android:text="@string/s7q302"2")}" />
+                            android:text="@string/s7q302" />
 
                         <CheckBox
                             android:id="@+id/s7q303"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s7q303.equals("
-                            android:text="@string/s7q303"3")}" />
+                            android:text="@string/s7q303" />
 
                         <CheckBox
                             android:id="@+id/s7q304"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s7q304.equals("
-                            android:text="@string/s7q304"4")}" />
+                            android:text="@string/s7q304" />
 
                         <CheckBox
                             android:id="@+id/s7q305"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s7q305.equals("
-                            android:text="@string/s7q305"5")}" />
+                            android:text="@string/s7q305" />
 
                         <CheckBox
                             android:id="@+id/s7q306"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s7q306.equals("
-                            android:text="@string/s7q306"6")}" />
+                            android:text="@string/s7q306" />
 
                         <CheckBox
                             android:id="@+id/s7q307"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s7q307.equals("
-                            android:text="@string/s7q307"7")}" />
+                            android:text="@string/s7q307" />
 
                         <CheckBox
                             android:id="@+id/s7q308"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s7q308.equals("
-                            android:text="@string/s7q308"8")}" />
+                            android:text="@string/s7q308" />
 
                         <CheckBox
                             android:id="@+id/s7q309"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s7q309.equals("
-                            android:text="@string/s7q309"9")}" />
+                            android:text="@string/s7q309" />
 
                         <CheckBox
                             android:id="@+id/s7q396"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:checked="@{formsContract.s7q396.equals("
-                            android:text="@string/s7q396"10")}" />
+                            android:text="@string/s7q396" />
 
                         <EditText
                             android:id="@+id/s7q396x"
@@ -254,11 +238,12 @@
                             android:layout_marginBottom="12dp"
                             android:hint="@string/s7q396"
                             android:tag="s7q396"
-                            android:text='@{s7q396.checked ? formsContract.s7q396x.toString() : ""}'
                             android:visibility='@{s7q396.checked? View.VISIBLE : View.GONE}' />
                     </LinearLayout>
                 </LinearLayout>
-            </androidx.cardview.widget.CardView><!--EndButton LinearLayout-->
+            </androidx.cardview.widget.CardView>
+
+            <!--EndButton LinearLayout-->
             <LinearLayout
                 style="@style/hlinearlayout"
                 android:layout_gravity="end"
@@ -266,16 +251,15 @@
 
                 <Button
                     android:id="@+id/btn_End"
-                    android:id="@+id/btn_End"
-                    style="@style/btnEnd"
+                    style="@style/buttonEnd"
                     android:onClick="@{() -> callback.BtnEnd()}"
                     android:text="End" />
 
                 <Button
-                    android:id="@+id/btn_End"
-                    style="@style/btnEnd"
-                    android:onClick="@{() -> callback.BtnEnd()}"
-                    android:text="End" />
+                    android:id="@+id/btn_Continue"
+                    style="@style/buttonNext"
+                    android:onClick="@{() -> callback.BtnContinue()}"
+                    android:text="Save" />
                 <!--EndButton LinearLayout-->
             </LinearLayout>
         </LinearLayout>
