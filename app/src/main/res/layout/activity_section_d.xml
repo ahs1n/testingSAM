@@ -681,31 +681,13 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/bottom">
-
                         <TextView
-                            android:id="@+id/qtxt_s4subtitle"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_toEndOf="@id/q_s4subtitle"
+                            style="@style/sub"
                             android:text="@string/s4subtitle"
                             android:textAlignment="center" />
 
-                        <TextView
-                            android:id="@+id/q_s4subtitle"
-                            style="@style/quesNum"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignTop="@id/qtxt_s4subtitle"
-                            android:layout_alignBottom="@id/qtxt_s4subtitle"
-                            android:text="@string/Q_s4subtitle" />
-                    </RelativeLayout>
-
-
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- user1  Spinner   -->

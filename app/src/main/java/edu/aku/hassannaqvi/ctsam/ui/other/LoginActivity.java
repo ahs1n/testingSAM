@@ -3,6 +3,7 @@ package edu.aku.hassannaqvi.ctsam.ui.other;
 import android.Manifest;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -508,6 +509,7 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
         }
     }
 
+    @SuppressLint("HardwareIds")
     private void doPermissionGrantedStuffs() {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling

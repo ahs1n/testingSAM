@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -58,16 +59,15 @@ public class SectionAActivity extends AppCompatActivity implements EndSectionAct
     private void setupSkips() {
         db = new DatabaseHelper(this);
         populateSpinner(this);
-        /*bi.s1q8.setOnCheckedChangeListener((group, checkedId) -> {
+        bi.s1q8.setOnCheckedChangeListener((group, checkedId) -> {
             if (checkedId == bi.s1q8b.getId()) {
-                bi.fldGrpCVs1q8r.setVisibility(View.VISIBLE);
+                bi.fldGrpCVs1q8reason.setVisibility(View.VISIBLE);
             } else {
-                Clear.clearAllFields(bi.fldGrpCVs1q8r);
-                bi.fldGrpCVs1q8r.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.fldGrpCVs1q8reason);
+                bi.fldGrpCVs1q8reason.setVisibility(View.GONE);
             }
-        });*/
+        });
     }
-
 
     public void BtnContinue() {
         if (formValidation(true)) {
