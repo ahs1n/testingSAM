@@ -90,7 +90,7 @@
                         app:mask="##.#"
                         app:maxValue="21"
                         app:minValue="11"
-                        app:pattern="^(\\{2,2}\\.\\d{1,1})$"
+                        app:pattern="^(\\d{2,2}\\.\\d{1,1})$"
                         app:type="range" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -135,7 +135,7 @@
                         app:mask="##.#"
                         app:maxValue="21"
                         app:minValue="11"
-                        app:pattern="^(\\{2,2}\\.\\d{1,1})$"
+                        app:pattern="^(\\d{2,2}\\.\\d{1,1})$"
                         app:type="range" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
