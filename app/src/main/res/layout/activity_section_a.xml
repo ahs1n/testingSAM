@@ -292,10 +292,11 @@
                 android:id="@+id/fldGrpCVs1q7"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <RelativeLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bottom">
 
@@ -316,8 +317,9 @@
                             android:text="@string/Q_s1q7" />
                     </RelativeLayout>
 
-
-                    <EditText
+                    <io.blackbox_vision.datetimepickeredittext.view.DatePickerEditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:id="@+id/s1q7"
                         style="@style/EditTextAlpha"
                         android:hint="@string/s1q7" />
