@@ -139,10 +139,11 @@
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:hint="@string/s4q2"
-                        app:mask="##"
+                        app:mask="#####"
                         app:maxValue="59999"
                         app:minValue="10001"
                         app:type="range" />
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -427,11 +428,14 @@
                     </RelativeLayout>
 
 
-                    <EditText
+                    <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/s4q7days"
-                        style="@style/EditTextAlpha"
+                        style="@style/EditTextNum"
                         android:layout_width="0dp"
                         android:layout_weight="1"
+                        android:maxLength="2"
+                        app:maxValue="29"
+                        app:minValue="0"
                         android:hint="@string/s4q7days" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -467,11 +471,14 @@
                     </RelativeLayout>
 
 
-                    <EditText
+                    <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/s4q7mon"
-                        style="@style/EditTextAlpha"
+                        style="@style/EditTextNum"
                         android:layout_width="0dp"
                         android:layout_weight="1"
+                        android:maxLength="2"
+                        app:maxValue="59"
+                        app:minValue="5"
                         android:hint="@string/s4q7mon" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>

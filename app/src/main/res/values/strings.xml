@@ -102,11 +102,11 @@
     <string name="s2q1a">Yes</string>
     <string name="s2q1b">No.</string>
     <string name="s2q2">Bilateral pitting oedema?</string>
+    <string name="s2q2_info">Note: Grades of Oedema-Definition : 1) Absent, 2)Grade + Mild: Both feet/ankles, 3) Grade++Moderate: Both feet, plus lower legs, hands or lower arms, 4) Grade+++Severe: Generalized oedema including both feet, legs, hands, arms and face</string>
     <string name="s2q2a">None</string>
     <string name="s2q2b">Bilateral pitting oedema +</string>
     <string name="s2q2c">Bilateral pitting oedema ++</string>
     <string name="s2q2d">Bilateral pitting oedema +++</string>
-    <string name="s2q2_instruction">Note: Grades of Oedema-Definition : 1) Absent, 2)Grade + Mild: Both feet/ankles, 3) Grade++Moderate: Both feet, plus lower legs, hands or lower arms, 4) Grade+++Severe: Generalized oedema including both feet, legs, hands, arms and face</string>
     <string name="s2q3">Presence of appetite for RUTF/RUSF?</string>
     <string name="s2q3a">Yes</string>
     <string name="s2q3b">No.</string>
